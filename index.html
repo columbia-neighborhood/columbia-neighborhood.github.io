@@ -1,11 +1,73 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Columbia Neighborhood Map Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <a href="https://imageog.flaticon.com/icons/png/512/235/235861.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF">Take me to the map</a>
+    <div class="container-lg">
+      <h1>Columbia Neighborhood Dashboard</h1>
+      <h2>A no frills hub for mapping community resources and other useful links</h2>
+      <div class="row">
+        <div class="col">
+          <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <h3>Ways to contribute below</h3>
+          <img class="arrow" src="https://rogerdudler.github.io/git-guide/img/arrow.png">
+        </div>
+        <div class="col-6">
+          <a href="https://www.google.com/maps/d/viewer?mid=1wENFmkoFEpfp1whKcZyA6r4y-I9_XuD0&ll=48.76094135539198%2C-122.49118022268459&z=15" target="_blank"><img id="map"src="./Public/ClickMap.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="input">
+      <h2> Use the buttons below to contribute. Your submission will be reviewed and added by an Admin <h2>
+      <div class="container-lg">
+        <div class="row">
+          <button class="btn btn-primary" id="form"  type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Submit by form
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Use the below embedded 
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGab510T7xUVbRIa3BanFm05VajsILihoqhaikLoOz9Kputg/viewform?embedded=true" width="640" height="2730" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="form"  type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+            Submit by email
+          </button>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+              Submit email to <a href="mailto:destination@gmail.com?body=this is the body">columbianeighborhoodmap@gmail.com</a> using following template
+              <div class="template">
+                subject: Map data
+              </div>
+              <div class="template">
+                <ul>
+                  <li>Your Email</li>
+                  <li>Your Name</li>
+                  <li>Current Status(open, closed, delivery</li>	
+                  <li>Date of Status Change</li>	 
+                  <li>Business Name</li>		
+                  <li>Description</li>		
+                  <li>Website</li>		
+                  <li>Public Email</li>		
+                  <li>Public Phone</li>	 
+                  <li>Address of Business</li>	
+                </ul>
+              </div>  
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
   </body>
 </html>

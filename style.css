@@ -25,6 +25,7 @@ body {
   
   h3{
     color: #E98C84;
+    text-align: center;
   }
   iframe {
     height: 2900px;
@@ -40,6 +41,7 @@ body {
     margin: auto;
     height: 40px;
     width: auto;
+    display:block;
   }
   .inputLine{
     padding: 0px 0px 0px 0px;
@@ -66,9 +68,6 @@ body {
   #input{
     background-color: #98C4C5;
     padding: 60px;
-  }
-  #form{
-    padding: 0px;
   }
   .template{
     width: 50%;

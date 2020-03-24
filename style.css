@@ -1,7 +1,9 @@
 body {
     font-family: 'Lato', Georgia, serif;
   }
-  
+  p{
+    margin: 15px;
+  }
   h1 {
     text-align:center;
     font-weight: normal;
@@ -26,10 +28,6 @@ body {
   h3{
     color: #E98C84;
     text-align: center;
-  }
-  iframe {
-    height: 2900px;
-    width: 100%;
   }
   #map{
     width: 100%;
@@ -87,4 +85,7 @@ body {
     list-style: none;
     text-align: left
   }
+  iframe{
+    width: 100%
+  };
   
